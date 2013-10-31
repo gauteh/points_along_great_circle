@@ -14,7 +14,7 @@ distance=0.500
 # read points
 a=0
 while read line; do
-  if [ $(echo $line | tr -d ' ') != '' ]; then
+  if [ "$(echo $line | tr -d ' ')" != '' ]; then
     lat[$a]=$(echo $line | awk -F" " '{ print $1 }')
     lon[$a]=$(echo $line | awk -F" " '{ print $2 }')
     let a++
