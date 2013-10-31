@@ -8,5 +8,5 @@
 selfd=$(dirname $0)
 . "${selfd}/common.sh"
 
-./geo2cart.sh $1 | grdtrack -G$ibcaogrd
+${selfd}/geo2cart.sh $1 | grdtrack -G$ibcaogrd
 
